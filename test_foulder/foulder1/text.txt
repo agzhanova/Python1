@@ -1,0 +1,9 @@
+pwd
+ls
+cd
+cd ..
+mkdir
+rm -d
+rm -rf
+touch
+nano 

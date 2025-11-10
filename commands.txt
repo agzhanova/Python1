@@ -1,0 +1,12 @@
+1. pwd показывает где вы находитесь 
+2. mkdir
+3. cd lessons
+4. cd ..
+5. cd
+6. ls
+7. rm nazv_file - del file
+8. rm -d nazv_papki - del papku, eski ona pustaya
+9. rm -rf nazv_papki - del papku
+10. touch nazv_file - sozd file 
+11. nano nazv_file - otkryt dlya redaktirovanie
+12. cd otnositelnyi ili mozhno polnyi
