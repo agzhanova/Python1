@@ -166,7 +166,10 @@
 #     'Дмитрий': 88
 # }
 # sum = 0
-# srd= 100
+# srd= 0
+# mx=0
+# mn=100
+
 # for i,j in students.items():
 #     print(f'{i} получил {j}')
 
@@ -177,17 +180,17 @@
 # print("Средняя оценка", srd)
 
 # for i in students:
-#     if students[i]>sum:
-#         sum=students[i]
+#     if students[i]>mx:
+#         mx=students[i]
 
-# print("max:", sum)
+# print("max:", mx)
 
 # for i in students:
 
-#     if students[i]<srd:
-#         srd=students[i]
+#     if students[i]<mn:
+#         mn=students[i]
 
-# print("min:", srd)
+# print("min:", mn)
 
 
 
@@ -214,6 +217,9 @@
 
 # for i,j in dictw.items():
 #     print(f'{i} встречается {j} раз')
+# setw=set(dictw)
+# print(setw)
+# print(len(setw))
 
 
 # Создайте словарь с хобби студентов:
@@ -231,7 +237,9 @@
 # 3. Выведите количество студентов, которые занимаются спортом
 # 4. Выведите студента с наибольшим количеством хобби
 
-# s={}
+# s=set()
+# c=0
+# mx=3
 # hobbies = {
 #     'Алиса': ['рисование', 'музыка', 'спорт'],
 #     'Боб': ['программирование', 'игры', 'спорт'],
@@ -244,21 +252,18 @@
 #     print(f'{i} : {a}')
 
 # for i,j in hobbies.items():
-# s=set(hobbies.values())
-    
+#     s.update(j)
 
 # print(s)
 
+# for i, j in hobbies.items():
+#     if 'спорт' in j:
+#         c+=1
+# print(c)
 
-
-
-students = {
-    'Алиса': 85,
-    'Боб': 92,
-    'Виктор': 78,
-    'Галина': 95,
-    'Дмитрий': 88
-}
-with open ('text.txt','a') as file:
-    for i,j in students.items():
-        file.write(f'{i} : {j} \n')
+# for i, j in hobbies.items():
+#     if len(j)>mx:
+#         mx=len(j)
+#         print(i)
+#     else: 
+#         continue
