@@ -163,7 +163,30 @@
 # apply_operation(square, 1, 2, 3, 4, 5)
 # → [1, 4, 9, 16, 25]
 
-def apply_operation(operation, *numbers):
-    print(list(map(operation,numbers)))
-apply_operation(lambda x: x*2, 1, 2, 3, 4, 5)
-apply_operation(lambda x: x**2, 1, 2, 3, 4, 5)
+# def apply_operation(operation, *numbers):
+#     print(list(map(operation,numbers)))
+# apply_operation(lambda x: x*2, 1, 2, 3, 4, 5)
+# apply_operation(lambda x: x**2, 1, 2, 3, 4, 5)
+
+
+
+
+import random
+
+def sort_result(func):
+    def wrapper():
+        result=func()
+        print(result)
+        result.sort()
+        return result
+    return wrapper
+
+@sort_result
+def rand_list():
+    a = []
+    for _ in range(10):
+        a.append(random.randint(1,10))
+    return a
+
+print(rand_list())
+

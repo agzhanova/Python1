@@ -86,3 +86,28 @@
 #     return a
 
 # print(monkey_count(5))
+
+# def positive_sum(arr):
+#     sum=0
+#     if arr != []:
+#         for i in arr:
+#             if i > 0:
+#                 sum+=i
+#         return sum
+#     else:
+#         return 0
+    
+# print(positive_sum([1,2,3,4,5]))
+# print(positive_sum([]))
+
+# def square_sum(numbers):
+#     a=[]
+#     for i in numbers:
+#         i=i**2
+#         a.append(i)
+#     return sum(a)
+
+# print(square_sum([1,2]))
+
+
+Keep Hydrated! --- 'это решить! '
